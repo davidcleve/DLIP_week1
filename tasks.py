@@ -6,29 +6,34 @@ import numpy
 
 # Task 1: 
 # Instructions:
-#Write a function that takes one numeric argument as input. 
-#If the number is larger than zero, the function should return 1, otherwise is should return -1.
-#The name of the function should be step
+# Write a function that takes one numeric argument as input. 
+# If the number is larger than zero, the function should return 1, otherwise it should return -1.
+# The name of the function should be step
 
 # Your code here:
 # -----------------------------------------------
+def step(number):
+    if (number > 0):
+        return 1
+    else:
+        return -1
 
-def step
-
-
+print(step(3))
+print(step(0))
+print(step(-3))
 # -----------------------------------------------
 
 
 # Task 2:
 # Instructions:
-#Write a function that takes in two arguments: a numpy array, and an integer (call argument "cutoff" and set default to 0).
-#The function should return a numpy array of the same length, with all elements smaller than the cutoff being set to cutoff).
-#The name of the function should be ReLu
+# Write a function that takes in two arguments: a numpy array, and an integer (call argument "cutoff" and set default to 0).
+# The function should return a numpy array of the same length, with all elements smaller than the cutoff being set to cutoff).
+# The name of the function should be ReLu
 
 
 # Your code here:
 # -----------------------------------------------
-def ReLu
+def ReLu(array)
 
 
 # -----------------------------------------------
