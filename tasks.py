@@ -13,16 +13,11 @@ import numpy
 # Your code here:
 # -----------------------------------------------
 def step(number):
-    if (number > 0):
+    if number > 0:
         return 1
     else:
         return -1
-
-print(step(3))
-print(step(0))
-print(step(-3))
 # -----------------------------------------------
-
 
 # Task 2:
 # Instructions:
@@ -30,14 +25,17 @@ print(step(-3))
 # The function should return a numpy array of the same length, with all elements smaller than the cutoff being set to cutoff).
 # The name of the function should be ReLu
 
-
 # Your code here:
 # -----------------------------------------------
-def ReLu(array)
-
-
+def ReLu(array, cutoff = 0):
+    output = numpy.array([])
+    for i in array:
+        if i > cutoff:
+            output = numpy.append(output, i)
+        else:
+            output = numpy.append(output, cutoff)
+    return output
 # -----------------------------------------------
-
 
 # Task 3:
 # Instructions:
